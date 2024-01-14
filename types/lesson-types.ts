@@ -5,7 +5,6 @@ export type LessonType = {
   id: string;
   title: string;
   description: string;
-  code: string;
 };
 
 export type LessonFormDataType = z.infer<typeof lessonFormSchema>;

@@ -4,7 +4,8 @@ export default authMiddleware({
   publicRoutes: [
     '/',
     '/lessons',
-    '/lessons/:id',
+    '/lessons/:lessonId',
+    '/api/lessons/:lessonId',
     '/api/webhook/clerk',
     '/api/webhooks(.*)',
     '/api/webhook(.*)',

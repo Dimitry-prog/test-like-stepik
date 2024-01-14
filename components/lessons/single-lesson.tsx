@@ -1,7 +1,5 @@
 'use client';
 
-import Button from '@/components/ui/button';
-import { SignedIn, SignedOut } from '@clerk/nextjs';
 import { useGetLessonByIdQuery, useUpdateLessonByIdMutation } from '@/lib/services/lesson-services';
 import Loader from '@/components/shared/loader';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
@@ -12,6 +10,8 @@ import { useState } from 'react';
 import { codeLessonFormSchema } from '@/lib/validation/lesson-form-validation';
 import 'ace-builds/src-noconflict/mode-javascript';
 import 'ace-builds/src-noconflict/theme-github';
+import Button from '@/components/ui/button';
+import { SignedIn, SignedOut } from '@clerk/nextjs';
 
 type SingleLessonProps = {
   lessonId: string;
