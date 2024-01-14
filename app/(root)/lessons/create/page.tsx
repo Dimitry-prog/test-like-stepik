@@ -1,4 +1,4 @@
-import LessonForm from '@/components/lessons/lesson-form';
+import LessonForm from '@/features/lessons/components/lesson-form';
 
 const CreateLessonPage = () => {
   return (

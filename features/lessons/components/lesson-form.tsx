@@ -1,13 +1,13 @@
 'use client';
 
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
-import { LessonFormDataType } from '@/types/lesson-types';
+import { LessonFormDataType } from '@/features/lessons/lesson-types';
 import { lessonDefaultValues } from '@/lib/contants';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { lessonFormSchema } from '@/lib/validation/lesson-form-validation';
+import { lessonFormSchema } from '@/features/lessons/lesson-form-validation';
 import Input from '@/components/ui/input';
 import TextArea from '@/components/ui/textarea';
-import { createLesson } from '@/lib/actions/lesson-actions';
+import { createLesson } from '@/features/lessons/lesson-actions';
 import { handleError } from '@/lib/utils';
 import { useRouter } from 'next/navigation';
 import Button from '@/components/ui/button';

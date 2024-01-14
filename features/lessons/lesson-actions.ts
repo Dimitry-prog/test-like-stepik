@@ -1,8 +1,8 @@
 'use server';
 
-import { LessonFormDataType } from '@/types/lesson-types';
+import { LessonFormDataType } from '@/features/lessons/lesson-types';
 import { handleError } from '@/lib/utils';
-import prisma from '../prisma';
+import prisma from '../../lib/prisma';
 import { revalidatePath } from 'next/cache';
 
 export const createLesson = async ({

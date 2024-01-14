@@ -1,8 +1,8 @@
 'use server';
 
 import { handleError } from '@/lib/utils';
-import { UserType } from '@/types/user-types';
-import prisma from '../prisma';
+import { UserType } from '@/features/users/user-types';
+import prisma from '../../lib/prisma';
 
 export const createUser = async (userData: Omit<UserType, 'id'>) => {
   try {

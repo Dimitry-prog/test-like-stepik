@@ -1,4 +1,4 @@
-import { LessonType } from '@/types/lesson-types';
+import { LessonType } from '@/features/lessons/lesson-types';
 import Link from 'next/link';
 
 type LessonCardProps = {

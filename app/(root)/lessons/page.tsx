@@ -1,5 +1,5 @@
-import { getAllLessons } from '@/lib/actions/lesson-actions';
-import LessonCard from '@/components/lessons/lesson-card';
+import { getAllLessons } from '@/features/lessons/lesson-actions';
+import LessonCard from '@/features/lessons/components/lesson-card';
 
 const LessonsPage = async () => {
   const lessons = await getAllLessons();

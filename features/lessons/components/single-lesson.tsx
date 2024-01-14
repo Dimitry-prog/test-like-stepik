@@ -1,13 +1,16 @@
 'use client';
 
-import { useGetLessonByIdQuery, useUpdateLessonByIdMutation } from '@/lib/services/lesson-services';
+import {
+  useGetLessonByIdQuery,
+  useUpdateLessonByIdMutation,
+} from '@/features/lessons/lesson-services';
 import Loader from '@/components/shared/loader';
 import { Controller, SubmitHandler, useForm } from 'react-hook-form';
 import AceEditor from 'react-ace';
-import { CodeLessonFormDataType, UpdateLessonByIdDTOType } from '@/types/lesson-types';
+import { CodeLessonFormDataType, UpdateLessonByIdDTOType } from '@/features/lessons/lesson-types';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useState } from 'react';
-import { codeLessonFormSchema } from '@/lib/validation/lesson-form-validation';
+import { codeLessonFormSchema } from '@/features/lessons/lesson-form-validation';
 import 'ace-builds/src-noconflict/mode-javascript';
 import 'ace-builds/src-noconflict/theme-github';
 import Button from '@/components/ui/button';

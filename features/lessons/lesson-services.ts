@@ -1,9 +1,9 @@
-import { api } from '@/lib/services/api';
+import { api } from '@/lib/api';
 import {
   GetLessonByIdDTOType,
   RequestUpdateLessonByIdType,
   UpdateLessonByIdDTOType,
-} from '@/types/lesson-types';
+} from '@/features/lessons/lesson-types';
 
 export const lessonServices = api.injectEndpoints({
   endpoints: (builder) => ({

@@ -1,4 +1,4 @@
-import SingleLesson from '@/components/lessons/single-lesson';
+import SingleLesson from '@/features/lessons/components/single-lesson';
 
 type SingleLessonPageProps = {
   params: {

@@ -1,5 +1,5 @@
 import z from 'zod';
-import { codeLessonFormSchema, lessonFormSchema } from '@/lib/validation/lesson-form-validation';
+import { codeLessonFormSchema, lessonFormSchema } from '@/features/lessons/lesson-form-validation';
 
 export type LessonType = {
   id: string;
