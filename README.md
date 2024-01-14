@@ -18,3 +18,8 @@ Stack
 - Redux toolkit
 - prettier
 - eslint
+
+Preview
+
+https://github.com/Dimitry-prog/test-like-stepik/assets/104152034/e3483cf4-73ba-4718-aea8-3953b79888b8
+
